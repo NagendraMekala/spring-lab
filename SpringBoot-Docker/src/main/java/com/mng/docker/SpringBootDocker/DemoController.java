@@ -8,7 +8,6 @@ public class DemoController {
 	
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello Docker Welcome to my world";
-		
+		return "Hello Docker Welcome to my world";	
 	}
 }
