@@ -1,0 +1,15 @@
+version: '2.2'
+services:
+    springboot-docker:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: springboot-docker:latest
+        ports:
+            - 8085
+        networks:
+            - springboot-net
+        scale: 3
+networks:
+    springboot-net:
+       driver: bridge
